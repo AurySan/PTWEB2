@@ -1,0 +1,64 @@
+/* GENERAL */
+body
+{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2vh;
+}
+
+@font-face
+{
+    font-family: "titreprince";
+    src: url('GrandHotel-Regular.otf');
+}
+
+.titre .titre1
+{
+    /*utilisera la police titreprince.tff*/
+    font-style: normal;
+    font-family: "titreprince";
+}
+
+/* HEADER */
+/* BODY */
+.titre1
+{
+    height: 5vh;
+    background-color: rgb(98,145,9);
+}
+
+.titre2
+{
+    height: 5vh;
+    background-color: rgb(225,84,65);
+}
+
+.titre3
+{
+    height: 5vh;
+    background-color: rgb(120,186,237);
+}
+
+h3
+{
+    color: rgb(98,145,9);
+    font-size: 3vh;
+    text-align: center;
+}
+/* FOOTER */
+/* MOBILE */
+/*.wrapper
+.menu
+.present
+.real
+.stage
+.titre
+.titre1
+.titre2
+.titre3
+.titre4
+.row
+.col1
+.col2*/
+
+
+
