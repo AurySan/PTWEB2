@@ -1,25 +1,34 @@
 /* GENERAL */
 body
 {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 2vh;
 }
 
-@font-face
+.titre
 {
-    font-family: "titreprince";
-    src: url('GrandHotel-Regular.otf');
-}
-
-.titre .titre1
-{
-    /*utilisera la police titreprince.tff*/
-    font-style: normal;
-    font-family: "titreprince";
+    padding-left: 4vh;
+    font-size: 6vh;
+    color: white;
+    font-family: 'Pacifico', cursive;
 }
 
 /* HEADER */
+nav.menu ul li
+{
+    display: inline-block;
+    text-align: center;
+    margin-right: 25px;
+}
+
+
 /* BODY */
+.present, .real
+{
+    min-height: 100vh;
+}
+
+
 .titre1
 {
     height: 5vh;
@@ -44,6 +53,101 @@ h3
     font-size: 3vh;
     text-align: center;
 }
+
+.row
+{
+    margin: auto;
+}
+
+.col1 
+{
+    width: calc(((100% - 1em) / 3) - 1em);
+    display: inline-block;
+}
+
+
+.col2 
+{
+    width: calc(((100% - 1em) / 2) - 1em);
+    display: inline-block;
+}
+
+p
+{
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+
+a:link
+{
+   text-decoration: none; 
+}
+
+nav.menu ul li img:hover
+{
+    -moz-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+
+nav.menu ul li a
+{
+    display: block;
+    color: #000;
+    text-transform: uppercase;
+}
+
+nav.menu ul li img
+{
+    margin-bottom: 10px;
+    height: 105px;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+
+nav.menu
+{
+    padding: 20px 0;
+}
+
+nav.menu ul
+{
+    width: 790px;
+    margin: 0 auto;
+}
+
+nav.menu ul li a:hover span
+{
+    opacity: 1;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+nav.menu ul li span
+{
+    font-weight: 600;
+    display: block;
+    opacity: 0;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+
 /* FOOTER */
 /* MOBILE */
 /*.wrapper
@@ -58,7 +162,8 @@ h3
 .titre4
 .row
 .col1
-.col2*/
+.col2
+.limenu*/
 
 
 

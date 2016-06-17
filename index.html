@@ -5,7 +5,8 @@
     <title>Mon CV interactif !</title>
     <link rel="stylesheet" media="screen" href="./css/reset.css">
     <link rel="stylesheet" media="screen" href="./css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" media="screen" href="./css/style.css">
 </head>
 <body>
@@ -14,33 +15,45 @@
             <iframe width="100%" height="800vh" src="https://www.youtube.com/embed/0LE5vRxHdIg" frameborder="0" autoplay="1" allowfullscreen></iframe>
             <nav class="menu">
                 <ul>
-                    <li><img height="60vh" src="images/picto.png">présentation</li>
-                    <li><img height="60vh" src="images/picto2.png">réalisations</li>
-                    <li><img height="60vh" src="images/picto3.png">stage</li>
-                    <li><img height="60vh" src="images/picto5.png">français</li>
-                    <li><img height="60vh" src="images/picto6.png">anglais</li>
-                    <li><img height="60vh" src="images/picto4.png">contact</li>
+                    <li class="limenu" alt="présentation"><a href="#presentid"><img src="images/pictos/present.png"><span>présentation</span></a></li>
+                    <li class="limenu" alt="réalisations"><a href="#realid"><img src="images/pictos/real.png"><span>réalisations</span></a></li>
+                    <li class="limenu" alt="stage"><a href="#stageid"><img src="images/pictos/stage.png"><span>stage</span></a></li>
+                    <li class="limenu" alt="français"><a href=""><img src="images/pictos/fr.png"><span>français</span></a></li>
+                    <li class="limenu" alt="anglais"><a href=""><img src="images/pictos/en.png"><span>anglais</span></a></li>
+                    <li class="limenu" alt="contact"><a href="#contactid"><img src="images/pictos/contact.png"><span>contact</span></a></li>
                 </ul>
             </nav>
         </header>
         <div>
         <section class="present">
-            <h1 class="titre titre1">Présentation</h1>
+            <h1 class="titre titre1" id="presentid">Présentation</h1>
             <h3>Sérieuse - Dynamique - Communicative</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus felis tellus, pharetra quis nisl vel, facilisis sagittis lacus. Sed convallis, lorem vitae vulputate sagittis, risus nisi sodales urna, at consectetur tortor velit vitae tortor.</p>
-            <img>
+            <img width="100%" src="images/pictos/metro.png">
         </section>
         <section class="real">
-            <h1 class="titre titre2">Réalisation</h1>
+            <h1 class="titre titre2" id="realid">Réalisation</h1>
             <div class="row">
-                <div class="col1"></div>
-                <div class="col1"></div>
-                <div class="col1"></div>
+                <div class="col1">
+                <iframe  width="480" height="360"  src="https://www.youtube.com/embed/0LE5vRxHdIg" frameborder="0" autoplay="1" allowfullscreen></iframe>
+                </div>
+                <div class="col1">
+                <iframe  width="480" height="360"  src="https://www.youtube.com/embed/0LE5vRxHdIg" frameborder="0" autoplay="1" allowfullscreen></iframe>
+                </div>
+                <div class="col1">
+                <iframe  width="480" height="360"  src="https://www.youtube.com/embed/0LE5vRxHdIg" frameborder="0" autoplay="1" allowfullscreen></iframe>
+                </div>
             </div>
             <div class="row">
-                <div class="col1"></div>
-                <div class="col1"></div>
                 <div class="col1">
+                <iframe  width="480" height="360"  src="https://www.youtube.com/embed/0LE5vRxHdIg" frameborder="0" autoplay="1" allowfullscreen></iframe>
+                </div>
+                <div class="col1">
+                <iframe  width="480" height="360"  src="https://www.youtube.com/embed/0LE5vRxHdIg" frameborder="0" autoplay="1" allowfullscreen></iframe>
+                </div>
+                <div class="col1">
+                <iframe  width="480" height="360"  src="https://www.youtube.com/embed/0LE5vRxHdIg" frameborder="0" autoplay="1" allowfullscreen></iframe>
+                </div>
                     <img>
                     <p>Plus de vidéos sur ma chaîne</p>
                 </div>
@@ -52,13 +65,13 @@
             </div>
         </section>
         <section class="stage">
-            <h1 class="titre titre3">Stage</h1>
+            <h1 class="titre titre3" id="stageid">Stage</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus felis tellus, pharetra quis nisl vel, facilisis sagittis lacus. Sed convallis, lorem vitae vulputate sagittis, risus nisi sodales urna, at consectetur tortor velit vitae tortor.</p>
             <p>Télécharger mon CV</p>
         </section>
         </div>
         <footer>
-        <h1 class="titre titre4">Contactez-moi</h1>
+        <h1 class="titre titre4" id="contactid">Contactez-moi</h1>
         <h4>Je vous réponds au plus vite</h4>
         <img>
         <img>
@@ -73,5 +86,18 @@
         </form>
         </footer>
     </div>
-<body>
+    
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script>
+    $('nav a[href^="#"]').click(function(e){
+    e.preventDefault;
+	var the_id = $(this).attr("href");
+
+	$('html, body').animate({
+		scrollTop:$(the_id).offset().top
+	}, 'slow');
+	return false;
+});
+    </script>
+</body>
 </html>
