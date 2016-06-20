@@ -81,6 +81,15 @@ h4
   font-size: 13px;
 }
 
+h5
+{
+  text-align: center;
+  margin: 10px 0;
+  color: rgb(77,77,77);
+  font-size: 15px;
+  font-weight: 900; 
+}
+
 .row
 {
   margin: auto;
@@ -99,7 +108,7 @@ footer{
 
 footer .copyright{
   color: white;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 footer .copyright a{
@@ -155,7 +164,7 @@ nav.menu.nav-scroll
 
 nav.menu.nav-scroll ul
 {
-  width: 550px;
+  width: 560px;
 }
 
 nav.menu.nav-scroll ul li span
@@ -291,7 +300,22 @@ img.moi
   display: block;
 }
 
+button.btn-default
+{
+  width: 100%;
+}
 
+button.btn-default:hover
+{
+  color: white;
+  background-color: #78BAED;
+  width: 100%;
+}
+
+/*article.box
+{
+  background: url(images/ticket.jpg);
+}*/
   /* FOOTER */
   /* MOBILE */
 /*.wrapper

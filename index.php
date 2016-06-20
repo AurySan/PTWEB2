@@ -43,7 +43,7 @@ function voir_alert(){ ?>
             <li class="limenu" alt="présentation"><a href="#presentid"><img src="images/pictos/present.png"><span>présentation</span></a></li>
             <li class="limenu" alt="réalisations"><a href="#realid"><img src="images/pictos/real.png"><span>réalisations</span></a></li>
             <li class="limenu" alt="stage"><a href="#stageid"><img src="images/pictos/stage.png"><span>stage</span></a></li>
-            <li class="limenu" alt="français"><a href=""><img src="images/pictos/fr.png"><span>français</span></a></li>
+            <li class="limenu" alt="français"><a href="index.php"><img src="images/pictos/fr.png"><span>français</span></a></li>
             <li class="limenu" alt="anglais"><a href=""><img src="images/pictos/en.png"><span>anglais</span></a></li>
             <li class="limenu" alt="contact"><a href="#contactid"><img src="images/pictos/contact.png"><span>contact</span></a></li>
           </ul>
@@ -55,8 +55,27 @@ function voir_alert(){ ?>
         <img class="moi" alt="moi" src="images/me.jpg">
         <h3>Sérieuse - Dynamique - Communicative</h3>
         <p>Je me présente: Auryane REISSER, 20 ans. Je suis actuellement en première année de DUT MMI (Métiers du Multimédia et de l’Internet). Ce DUT pluridisciplinaire regroupe: web, graphisme, communication et audiovisuel. Je souhaite privilégier la branche audiovisuel de ma formation afin de devenir monteuse-truquiste / cadreuse. </p>
-        <h3>Pour en savoir un peu plus sur moi:</h3>
-        <img width="100%" src="images/pictos/metro.png">
+        <h3>Pour en savoir un peu plus sur moi</h3>
+        <!--<article class="box">
+          <a class="box text1" href="">c</a>
+          <a class="box text2" href="">c</a>
+          <a class="box text3" href="">c</a>
+        </article>-->
+
+        <img src="images/ticket.jpg">
+        <img width="100%" src="images/metro.png">
+        <!--<article>
+          <h3>Mes études</h3>
+          <img width="100%" src="images/etudes.png">
+        </article>
+        <article>
+          <h3>Mes compétences</h3>
+          <img width="100%" src="images/logiciels.png">
+        </article>
+        <article>
+          <h3>Mes hobbies</h3>
+          <img width="100%" src="images/hobbies.png">
+        </article>-->
       </section>
       <!-- SECTION 2 : REALISATIONS -->
       <!-- IMAGE A METTRE 825x609 -->
@@ -110,25 +129,31 @@ function voir_alert(){ ?>
         </div>
         <h3>Les points +</h3>
         <div class="row">
+          <h5 class="col2">En graphisme</h5>
+          <h5 class="col2">En web</h5>
+        </div>
+        <div class="row">
           <div class="col2">
             <div id="galerie_1" class="owl-carousel owl-theme">
               <div class="item"><img src="./images/galerie/App_couleurs_TP1.jpg" alt="pictos" width="100%"></div>
               <div class="item"><img src="./images/galerie/Typo_TP3.jpg" alt="logo1" width="100%"></div>
-              <div class="item"><img src="./images/galerie/Typo_TP4.jpg" alt="logo2" width="100%"></div>
+              <!--<div class="item"><img src="./images/galerie/Typo_TP4.jpg" alt="logo2" width="100%"></div>-->
               <div class="item"><img src="./images/galerie/projet_CREA2.jpg" alt="logofablab" width="100%"></div>
               <div class="item"><img src="./images/galerie/Projet_perso.jpg" alt="logoindo" width="100%"></div>
-              <div class="item"><img src="./images/galerie/planchetendance.jpg" alt="logoindo" width="100%"></div>
+              <div class="item"><img src="./images/galerie/planchetendance.jpg" alt="planche" width="100%"></div>
+              <div class="item"><img src="./images/galerie/lion.jpg" alt="lion" width="100%"></div>
+              <div class="item"><img src="./images/galerie/ladyrose.jpg" alt="pinklady" width="100%"></div>
+              <div class="item"><img src="./images/galerie/SonofMan.jpg" alt="sonofman" width="100%"></div>
+              <!--<div class="item"><img src="./images/galerie/joker.jpg" alt="joker" width="100%"></div>-->
             </div>
           </div>
           <div class="col2">
-
             <div id="galerie_2" class="owl-carousel owl-theme">
-              <div class="item"><img src="./images/galerie/App_couleurs_TP1.jpg" alt="pictos" width="100%"></div>
-              <div class="item"><img src="./images/galerie/Typo_TP3.jpg" alt="logo1" width="100%"></div>
-              <div class="item"><img src="./images/galerie/Typo_TP4.jpg" alt="logo2" width="100%"></div>
-              <div class="item"><img src="./images/galerie/projet_CREA2.jpg" alt="logofablab" width="100%"></div>
-              <div class="item"><img src="./images/galerie/Projet_perso.jpg" alt="logoindo" width="100%"></div>
-              <div class="item"><img src="./images/galerie/planchetendance.png" alt="logoindo" width="100%"></div>
+              <div class="item"><img src="./images/galerie/web1.jpg" alt="web1" width="100%"></div>
+              <div class="item"><img src="./images/galerie/web2.jpg" alt="web2" width="100%"></div>
+              <div class="item"><img src="./images/galerie/web3.jpg" alt="web3" width="100%"></div>
+              <div class="item"><img src="./images/galerie/web4.jpg" alt="web4" width="100%"></div>
+              <div class="item"><img src="./images/galerie/web5.jpg" alt="web5" width="100%"></div>
             </div>
           </div>
         </div>
@@ -186,7 +211,7 @@ function voir_alert(){ ?>
       </div>
     </div>
 
-    <p class="copyright text-center">&copy; All rights reserved <a href="https://twitter.com/Auryane_">Auryane Reisser</a>.</p>
+    <p class="copyright text-center">&copy; All rights reserved <a href="https://twitter.com/Auryane_" target="_blank">Auryane Reisser</a>.</p>
   </footer>
 
 </div>
