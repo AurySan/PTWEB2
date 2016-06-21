@@ -9,6 +9,19 @@ $(document).ready(function() {
     singleItem:true
   });
 
+  $('.metro-item').on('click', function(e){
+    e.preventDefault();
+    $couleur = $(this).attr('data-item');
+
+    $.get('metro.php', { couleur: $couleur })
+      .done(function(a){
+        $('.metro-retour').html(a);
+      })
+      .fail(function(){
+        $('.metro-retour').html('<img width="100%" src="images/metro3.png">');
+      });
+  });
+
   // Configuration du smooth scroll (scroll lent avec animation)
   $('nav a[href^="#"]').click(function(e){
     e.preventDefault;
