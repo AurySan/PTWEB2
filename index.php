@@ -34,7 +34,7 @@ function voir_alert(){ ?>
     <div class="wrapper">
       <!-- HEADER -->
 
-      <nav class="navbar navbar-default navbar-fixed-top visible-xs text-center" role="navigation">
+      <nav class="navbar navbar-default navbar-fixed-top visible-xs visible-sm text-center" role="navigation">
         <div class="container-fluid">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -47,12 +47,12 @@ function voir_alert(){ ?>
 
           <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-              <li><a href="#">Présentation</a></li>
-              <li><a href="#">Réalisations</a></li>
-              <li><a href="#">Stage</a></li>
-              <li><a href="#">Français</a></li>
-              <li><a href="#">Anglais</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#presentid">Présentation</a></li>
+              <li><a href="#realid">Réalisations</a></li>
+              <li><a href="#stageid">Stage</a></li>
+              <li><a href="index.php">Français</a></li>
+              <li><a href="indexen.php">Anglais</a></li>
+              <li><a href="#contactid">Contact</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div>
@@ -68,7 +68,7 @@ function voir_alert(){ ?>
             <li class="limenu" alt="réalisations"><a href="#realid"><img src="images/pictos/real.png"><span>réalisations</span></a></li>
             <li class="limenu" alt="stage"><a href="#stageid"><img src="images/pictos/stage.png"><span>stage</span></a></li>
             <li class="limenu" alt="français"><a href="index.php"><img src="images/pictos/fr.png"><span>français</span></a></li>
-            <li class="limenu" alt="anglais"><a href=""><img src="images/pictos/en.png"><span>anglais</span></a></li>
+            <li class="limenu" alt="anglais"><a href="indexen.php"><img src="images/pictos/en.png"><span>anglais</span></a></li>
             <li class="limenu" alt="contact"><a href="#contactid"><img src="images/pictos/contact.png"><span>contact</span></a></li>
           </ul>
         </nav>
@@ -85,11 +85,11 @@ function voir_alert(){ ?>
         <div class="ticket">
           <a href="#" class="metro-item" data-item="rouge">Etudes</a>
           <a href="#" class="metro-item" data-item="bleue">Compétences</a>
-          <a href="#" class="metro-item" data-item="verte">Hobbies</a>
+          <a href="#" class="metro-item" data-item="verte">Loisirs</a>
         </div>
         
         <div class="metro-retour">
-          <img width="100%" src="images/metro3.png">
+          <img width="100%" class="beauf" src="images/metro3.png">
         </div>
         
       </section>
@@ -145,7 +145,7 @@ function voir_alert(){ ?>
                   <p class="legend">Le but de ce projet était d’écrire un scénario et de le réaliser. Geeks dans l’âme, nous décidons de reprendre <i>Le Seigneur des Anneaux</i> à la sauce geek !</p>
                 </div>
                 <div class="col2">
-                  <p class="legend legend-2">Suite à une défi lancé par un youtubeur (<i>French Food Porn</i>), nous décidons de retrousser nos manches et pourquoi pas de filmer ce moment afin d'immortaliser cette après-midi cuisine.</p>
+                  <p class="legend legend-2">Suite à un défi lancé par un youtubeur (<i>French Food Porn</i>), nous décidons de retrousser nos manches et pourquoi pas de filmer ce moment afin d'immortaliser cette après-midi cuisine.</p>
                 </div>
               </div>
               <div class="row">
@@ -204,7 +204,7 @@ function voir_alert(){ ?>
       <section class="stage">
         <h1 class="titre titre3" id="stageid">Stage</h1>
         <p>Je suis actuellement à la recherche d’un stage de 3 mois, dans le cadre de ma deuxième année de DUT. Je suis disponible du 1er avril 2017 au 30 juin 2017 ! Pour plus de précisions, merci de me contacter.</p>
-        <p>Télécharger mon CV</p>
+        <a class="textcontact" href="./images/cvweb.png">Voir mon CV</a>
       </section>
       <!-- FOOTER -->
       <footer>
@@ -259,7 +259,7 @@ function voir_alert(){ ?>
 
   </div>
   <!-- INTEGRATION DE SCRIPTS -->
-  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="//code.jquery.com/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
   <script src="app.js"></script>

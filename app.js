@@ -22,6 +22,20 @@ $(document).ready(function() {
       });
   });
 
+   $('.subway-item').on('click', function(e){
+    e.preventDefault();
+    $couleur = $(this).attr('data-item');
+
+    $.get('subway.php', { couleur: $couleur })
+      .done(function(a){
+        $('.subway-retour').html(a);
+      })
+      .fail(function(){
+        $('.subway-retour').html('<img width="100%" src="images/metro3.png">');
+      });
+  });
+
+
   // Configuration du smooth scroll (scroll lent avec animation)
   $('nav a[href^="#"]').click(function(e){
     e.preventDefault;
